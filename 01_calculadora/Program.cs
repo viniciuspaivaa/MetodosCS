@@ -1,4 +1,23 @@
 ﻿using Menu;
+using Microsoft.VisualBasic;
+class Program{
+
+public static decimal IsNumber()
+{
+    decimal valor = 0;
+    while(!decimal.TryParse(Console.ReadLine(), out valor))
+    {
+        Console.Write("Valor inválido, tente outro: ");
+    }
+
+    return valor;
+}
+
+
+
+
+
+static void Main(string[]args){
 
 string opcao = "";
 decimal n1 = 0;
@@ -6,6 +25,8 @@ decimal n2 = 0;
 
 Console.Write("Teste");
 opcao = Navegacao.ImprimirMenu();
+
+IsNumber();
 
 Console.Write("Digite o primeiro número: ");
 while(!decimal.TryParse(Console.ReadLine(), out n1))
@@ -37,4 +58,5 @@ switch (opcao)
         Console.Write("Erro inesperado!");
         break;
 }
-
+}
+}

@@ -1,0 +1,15 @@
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\bin\Debug\net8.0\02_tarefas.exe
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\bin\Debug\net8.0\02_tarefas.deps.json
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\bin\Debug\net8.0\02_tarefas.runtimeconfig.json
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\bin\Debug\net8.0\02_tarefas.dll
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\bin\Debug\net8.0\02_tarefas.pdb
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\02_tarefas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\02_tarefas.AssemblyInfoInputs.cache
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\02_tarefas.AssemblyInfo.cs
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\02_tarefas.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\02_tarefas.sourcelink.json
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\02_tarefas.dll
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\refint\02_tarefas.dll
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\02_tarefas.pdb
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\02_tarefas.genruntimeconfig.cache
+C:\Users\Alunos\Desktop\MetodosCS\02_tarefas\obj\Debug\net8.0\ref\02_tarefas.dll
