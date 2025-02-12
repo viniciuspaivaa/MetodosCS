@@ -14,7 +14,5 @@ namespace Tarefa
             Concluida = false;
             Nome = nome;
         }
-
-
     }
 }

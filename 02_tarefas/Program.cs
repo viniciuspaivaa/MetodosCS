@@ -3,42 +3,62 @@ using System.Diagnostics;
 using System.Reflection.Metadata;
 using System.Security.AccessControl;
 using Layout;
-using Tarefa;
 using GerenciarTarefa;
 
-int opcao;
-
-do
+public class Program
 {
-    opcao = Formatacao.ImprimirCabecalho();
-
-    switch(opcao)
+    public static int ConferirNumero(int valor)
     {
-        case 1:
-            Console.Write("Digite o nome da tarefa: ");
-            string nomeTarefa = Console.ReadLine();
-            GerenciarTarefa.GerenciarTarefa.NovaTarefa($"{nomeTarefa}");
-            break;
-        case 2:
-            GerenciarTarefa.GerenciarTarefa.ExibirTarefa();
-            break;
-        case 3:
-            Console.Write("Digite a tarefa deseja concluir: ");
-            int con = int.Parse(Console.ReadLine());
-            
-            GerenciarTarefa.GerenciarTarefa.Concluir(con);
-            break;
-        case 4:
-            Console.Write("Digite o ID que deseja remover: ");
-            int del = int.Parse(Console.ReadLine());
+        int id;
 
-            GerenciarTarefa.GerenciarTarefa.RemoverTarefa(del);
-            break;
-        default:
-            Console.Write("Erro!");
-            break;
+        while(!int.TryParse(Console.ReadLine(), out id))
+        {
+            Console.Write("Valor inválido, tente novamente: ");
+        }
+    
+        return id;
     }
-}while(opcao != 0);
 
+    static void Main(string[]args)
+    {
+        int opcao;
 
-//Loop no Program não aceita opção 0
+        do
+        {
+            opcao = Formatacao.ImprimirCabecalho();
+
+            switch(opcao)
+            {
+                case 1:
+                    Console.Write("Digite o nome da tarefa: ");
+                    string nomeTarefa = Console.ReadLine();
+                    GerenciarTarefa.GerenciarTarefa.NovaTarefa($"{nomeTarefa}");
+                    break;
+                case 2:
+                    GerenciarTarefa.GerenciarTarefa.ExibirTarefa();
+                    break;
+                case 3:
+                    Console.Write("Digite a tarefa deseja concluir: ");
+                    int con = 0;
+                    ConferirNumero(con);
+                    GerenciarTarefa.GerenciarTarefa.Concluir(con);
+                    Console.Write(con);
+                    break;
+                case 4:
+                    Console.Write("Digite o ID que deseja remover: ");
+                    int del = 0;
+                    ConferirNumero(del);
+                    GerenciarTarefa.GerenciarTarefa.RemoverTarefa(del);
+                    break;
+                case 0:
+                    Console.Write("Saindo...");
+                    break;
+                default:
+                    Console.Write("Erro!");
+                    break;
+            }
+        }while(opcao != 0);
+
+    }
+}
+

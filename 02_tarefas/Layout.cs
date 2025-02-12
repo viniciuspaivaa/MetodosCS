@@ -1,3 +1,5 @@
+using GerenciarTarefa;
+
 namespace Layout
 {
     public class Formatacao
@@ -14,13 +16,20 @@ namespace Layout
         {
             int opcao;
 
-            Console.WriteLine("Gerenciador de Tarefas");
+            Console.Clear();
+
+            GerenciarTarefa.GerenciarTarefa.ExibirTarefa();
+
+            Console.WriteLine($"╔{new string('═', 24)}╗");
+            Console.WriteLine($"║ Gerenciador de Tarefas ║");
+            Console.WriteLine($"╚{new string('═', 24)}╝");
+
             Console.WriteLine("1. Adicionar tarefa");
             Console.WriteLine("2. Listar tarefas");
             Console.WriteLine("3. Concluir tarefa");
             Console.WriteLine("4. Remover tarefa");
             Console.WriteLine("0. Sair");
-            Console.Write("Escolha uma opção: ");
+            Console.Write("\nEscolha uma opção: ");
 
             while(!int.TryParse(Console.ReadLine(), out opcao))
             {
