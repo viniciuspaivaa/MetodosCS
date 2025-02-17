@@ -7,18 +7,6 @@ using GerenciarTarefa;
 
 public class Program
 {
-    public static int ConferirNumero(int valor)
-    {
-        int id;
-
-        while(!int.TryParse(Console.ReadLine(), out id))
-        {
-            Console.Write("Valor inválido, tente novamente: ");
-        }
-    
-        return id;
-    }
-
     static void Main(string[]args)
     {
         int opcao;
@@ -39,15 +27,21 @@ public class Program
                     break;
                 case 3:
                     Console.Write("Digite a tarefa deseja concluir: ");
-                    int con = 0;
-                    ConferirNumero(con);
+                    int con;
+                    while(!int.TryParse(Console.ReadLine(), out con))
+                    {
+                        Console.Write("Valor inválido, tente novamente: ");
+                    }
                     GerenciarTarefa.GerenciarTarefa.Concluir(con);
                     Console.Write(con);
                     break;
                 case 4:
                     Console.Write("Digite o ID que deseja remover: ");
-                    int del = 0;
-                    ConferirNumero(del);
+                    int del;
+                    while(!int.TryParse(Console.ReadLine(), out del))
+                    {
+                        Console.Write("Valor inválido, tente novamente: ");
+                    }
                     GerenciarTarefa.GerenciarTarefa.RemoverTarefa(del);
                     break;
                 case 0:
